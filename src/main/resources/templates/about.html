@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About | Wedding Cake Bootstrap Theme</title>
+
+    <!-- CSS includes -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" title="Wedding Cake Bootstrap Theme">
+                <img class="img-responsive" src="images/logo.png" alt="Wedding Cake Bootstrap Theme"/>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/index" class="smooth-scroll">HOME</a></li>
+                <li class="active"><a href="/about">ABOUT</a></li>
+                <li><a href="/stuff">SERVICES</a></li>
+                <li><a href="/offers">OFFERS</a></li>
+                <li><a href="/gallery">GALLERY</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/cards" sec:authorize="isAuthenticated()">CAKE SHOP</a></li>
+                <li><a href="/login" sec:authorize="!isAuthenticated()">LOGIN</a></li>
+                <li><a href="/logout" sec:authorize="isAuthenticated()">LOGOUT</a></li>
+                <li><a href="/register" sec:authorize="!isAuthenticated()">REGISTER</a></li>
+                <li><a href="/product/add" sec:authorize="hasAuthority('ADMIN')">ADD PRODUCT</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-about">
+    <div class="container">
+        <div class="page-header" id="about">
+            <h1 class="text-danger" style="text-align:center;">About Us</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="text-info">Who we are</h3>
+                <img src="images/image3.jpg" style="width:400px" class="img-responsive"/>
+                <br/>
+                <p class="text-justify">Wedding Cake is a New York City luxury confections brand with over 50 boutiques
+                    worldwide. Created in 2001 and led by CEO Ken Romaniszyn, Wedding Cake is most famous for the
+                    creation of
+                    Signature Mille Crêpes. Wedding Cake marries French pastry techniques with Japanese sensibilities,
+                    resulting in delicate cakes that are a touch sweet and perfect for every occasion.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-info">Our mission</h3>
+                <h3><span class="price-circle text-center" style="background-color: #a4d05f;">1</span>&nbsp; What is
+                    our mission?</h3>
+                <p class="text-justify">Wedding Cake is known as the creator of the world famous Mille Crêpes, an
+                    unforgettable cake coupling 20 alternating layers of soft cream and lacy French crêpes.</p>
+                <h3><span class="price-circle text-center" style="background-color: #f48f97;">2</span>&nbsp; Why do we
+                    use it?</h3>
+                <p class="text-justify">Wedding Cake is a New York City luxury confection brand with over 50 boutiques
+                    worldwide.</p>
+                <h3><span class="price-circle text-center" style="background-color: #25a2a6;">3</span>&nbsp; Where can I
+                    get some?</h3>
+                <p class="text-justify">From collaborations like Netflix and Baccarat, to new innovations, Wedding Cake
+                    creates exciting product launches that take our products to the next level.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-info">Our team</h3>
+                <img src="images/image4.jpg" style="width:400px" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-people-say">
+    <div class="container">
+        <div class="page-header" id="people-say">
+            <h1 class="text-info text-center">What People Say</h1>
+        </div>
+        <div class="row">
+            <br/>
+            <div class="col-md-3">
+                <img src="images/bride1.jpg" style="border-radius:50%; width:180px; height:180px;"
+                     class="img-responsive"/>
+                <br/>
+                <p class="text-justify">"The cake turned out PERFECT!!!! I loved it and everyone ooooohhhhed and
+                    ahhhhhhhhd over it. Plus, it was delicious. Thanks again and the cake was perfect I actually
+                    referred someone to you yesterday!"</p>
+                <p>Angelina</p>
+            </div>
+            <div class="col-md-3">
+                <img src="images/bride2.jpg" style="border-radius:50%; width:180px; height:180px;"
+                     class="img-responsive"/>
+                <br/>
+                <p class="text-justify">"I wanted to thank you so much for the awesome cake that you made for Chris’
+                    wedding. It looked AWESOME!!! I have to tell you that there wasn’t any cake left at the end of the
+                    evening!!
+                    I unfortunately did not have any cake for I was so busy but many people came up to me and told me
+                    that it was delicious!
+                    Thank you again for all that hard work!!"</p>
+                <p>Marie</p>
+            </div>
+            <div class="col-md-3">
+                <img src="images/bride3.jpg" style="border-radius:50%; width:180px; height:180px;"
+                     class="img-responsive"/>
+                <br/>
+                <p class="text-justify">"I meant to send this days ago, but I wanted to thank you so much for the
+                    beautiful and delicious cake you made for our little girls birthday! The first picture is her face
+                    as we were bringing it out. You did such a fantastic job- it was everything I hoped it would
+                    be."</p>
+                <p>Anna</p>
+            </div>
+            <div class="col-md-3">
+                <img src="images/bride4.jpg" style="border-radius:50%; width:180px; height:180px;"
+                     class="img-responsive"/>
+                <br/>
+                <p class="text-justify">"Went for the first time with friends. My wife and I shared the Calamari
+                    appetizer, Cesar Salad and the Seafood risotto. Service, atmosphere, and food were all top shelf.
+                    Manager checked on us himself. Highly recommend to any and all. Great Experience."</p>
+                <p>Elizabeth</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="subfooter" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p style="font-size:18px;"><span class="fa fa-birthday-cake text-danger"></span> CAKE OFFER</p>
+                <p>The standard chunk of used since the 1500s is reproduced below for those interested.</p>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size:18px;"><span class="fa fa-clock-o text-danger"></span> OPEN HOURS</p>
+                <p>Mondays : Closed</p>
+                <p>Tue-Fri : 0am - 12am</p>
+                <p>Sat-Sun : 7am - 1am</p>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size:18px;"><span class="fa fa-map-marker text-danger"></span> CONTACTS</p>
+                <p>54, North Road, PA 45086, USA</p>
+                <p>+1 888 455 6677</p>
+                <p><a href="mailto:mail@example.com">mail@example.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <p style="font-size:18px;"><span class="fa fa-envelope-o text-danger"></span> NEWSLETTER</p>
+                <p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter your email..."/>
+                    <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </span>
+                </div>
+                </p>
+                <p><br/></p>
+                <p>
+                    <a class="fa fa-twitter footer-socialicon" target="_blank" href="https://twitter.com/"></a>
+                    <a class="fa fa-facebook footer-socialicon" target="_blank" href="https://www.facebook.com/"></a>
+                    <a class="fa fa-google-plus footer-socialicon" target="_blank" href="https://plus.google.com/"></a>
+                    <a class="fa fa-linkedin footer-socialicon" target="_blank" href="https://plus.google.com/"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer id="footer" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+                <p>Created by <a href="https://www.shieldui.com" title="Shield UI">Shield UI</a> and hosted by <a
+                        href="https://www.prepbootstrap.com" title="PrepBootstrap">PrepBootstrap</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
